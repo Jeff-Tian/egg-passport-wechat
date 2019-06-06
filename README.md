@@ -25,7 +25,7 @@ Description here.
 ## Install
 
 ```bash
-$ npm i egg-passport-wechat --save
+$ npm i egg-passport-wechat-ts --save
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ $ npm i egg-passport-wechat --save
 // {app_root}/config/plugin.[t|j]s
 exports.passportWechat = {
   enable: true,
-  package: "egg-passport-wechat"
+  package: "egg-passport-wechat-ts"
 };
 ```
 

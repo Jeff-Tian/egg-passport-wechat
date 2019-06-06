@@ -1,5 +1,5 @@
 {
-  "name": "egg-passport-wechat",
+  "name": "egg-passport-wechat-ts",
   "version": "0.0.1",
   "description": "Wechat passport plugin for egg",
   "eggPlugin": {
