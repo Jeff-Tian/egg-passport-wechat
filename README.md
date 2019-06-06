@@ -22,6 +22,14 @@
 Description here.
 -->
 
+## Example
+
+Open [https://uniheart.herokuapp.com/](https://uniheart.herokuapp.com/) on your wechat browser to see the result:
+
+1. Open your wechat
+2. Scan the following QR Code to follow the test public account: ![](./images/public-test-account.jpeg)
+3. And then scan the following QR Code to open the example site: ![](./images/uniheart.png)
+
 ## Install
 
 ```bash
