@@ -3,7 +3,7 @@
 > Wechat passport plugin for egg.
 
 [![NPM version][npm-image]][npm-url]
-[![Build Status](https://travis-ci.com/Jeff-Tian/egg-passport-wechat.svg?branch=master)](https://travis-ci.com/Jeff-Tian/egg-passport-wechat)
+[![Build Status](https://travis-ci.com/Jeff-Tian/egg-passport-wechat-ts.svg?branch=master)](https://travis-ci.com/Jeff-Tian/egg-passport-wechat-ts)
 [![codecov](https://codecov.io/gh/Jeff-Tian/egg-passport-wechat/branch/master/graph/badge.svg)](https://codecov.io/gh/Jeff-Tian/egg-passport-wechat)
 [![David deps][david-image]][david-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
@@ -15,8 +15,8 @@
 [david-url]: https://david-dm.org/jeff-tian/egg-passport-wechat
 [snyk-image]: https://snyk.io/test/npm/egg-passport-wechat/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/egg-passport-wechat
-[download-image]: https://img.shields.io/npm/dm/egg-passport-wechat.svg?style=flat-square
-[download-url]: https://npmjs.org/package/egg-passport-wechat
+[download-image]: https://img.shields.io/npm/dm/egg-passport-wechat-ts.svg?style=flat-square
+[download-url]: https://npmjs.org/package/egg-passport-wechat-ts
 
 <!--
 Description here.
