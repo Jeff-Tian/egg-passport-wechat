@@ -6,7 +6,7 @@ const Strategy = require('passport-wechat-x').Strategy
 
 export default (app: Application) => {
     const config = app.config.passportWechat
-    config.passReqToCallback = false
+    config.passReqToCallback = true
 
     assert(
         config.key,
@@ -25,26 +25,33 @@ export default (app: Application) => {
                 req: any,
                 accessToken: string,
                 refreshToken: string,
-                params: any,
                 profile: any,
-                done: any
+                expires_in: number,
+                verified: any
             ) => {
+                console.log('arguments = ', {
+                    accessToken,
+                    refreshToken,
+                    profile,
+                    expires_in,
+                    verified
+                })
                 const user = {
                     provider: 'wechat',
                     id: profile.unionid || profile.openid,
                     name: profile.nickname,
                     displayName: profile.nickname,
-                    photo: profile.photo,
+                    photo: profile.headimgurl,
+                    gender: profile.sex === 1 ? 'male' : 'female',
                     accessToken,
                     refreshToken,
-                    params,
                     profile
                 }
 
                 debug('%s %s get user: %j', req.method, req.url, user)
 
-                console.log('do verifying...')
-                app.passport.doVerify(req, user, done)
+                console.log('do verifying...', app.passport.doVerify)
+                app.passport.doVerify(req, user, verified)
             }
         )
     )
