@@ -27,6 +27,19 @@ describe('test/passport-github.test.ts', () => {
             .httpRequest()
             .get('/passport/wechat')
             .expect(302)
-            .expect('Location', /^https:\/\/open\.weixin\.qq\.com\/connect\/oauth2\/authorize\?appid\=/)
+            .expect(
+                'Location',
+                /^https:\/\/open\.weixin\.qq\.com\/connect\/oauth2\/authorize\?appid\=/
+            )
+    })
+
+    it('should GET /passport/wechat/callback redirect to auth url', () => {
+        return request(app.callback())
+            .get('/passport/wechat/callback')
+            .expect(302)
+            .expect(
+                'Location',
+                /^https:\/\/open\.weixin\.qq\.com\/connect\/oauth2\/authorize\?appid\=/
+            )
     })
 })

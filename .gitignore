@@ -15,3 +15,5 @@ config/**/*.map
 typings/app/**/*.ts
 typings/config/**/*.ts
 codegen/dist/**/*.ts
+
+app.js
