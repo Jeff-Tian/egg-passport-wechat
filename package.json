@@ -1,0 +1,77 @@
+{
+  "name": "egg-passport-wechat",
+  "version": "0.0.1",
+  "description": "Wechat passport plugin for egg",
+  "eggPlugin": {
+    "name": "passportWechat",
+    "dependencies": [
+      "passport"
+    ]
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "passport-wechat"
+  ],
+  "dependencies": {
+    "debug": "^2.6.1",
+    "egg-passport": "^2.0.1",
+    "passport-wechat": "latest"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^10.12.0",
+    "autod": "^3.0.0",
+    "autod-egg": "^1.0.0",
+    "coffee": "^5.2.1",
+    "egg": "^2.0.0",
+    "egg-bin": "^4.3.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.13.0",
+    "egg-ts-helper": "^1.13.0",
+    "ts-node": "^8.2.0",
+    "tsc": "^1.20150623.0",
+    "tslib": "^1.9.3",
+    "tslint": "^5.11.0",
+    "typescript": "latest",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "egg": {
+    "typescript": true
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "npm run tsc && egg-bin test",
+    "tsc": "ets && tsc -p tsconfig.json",
+    "cov": "egg-bin cov",
+    "lint": "tslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run test-local && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod",
+    "clean": "ets clean",
+    "prepublish": "npm run test-local"
+  },
+  "files": [
+    "app",
+    "config",
+    "app.js",
+    "index.d.ts"
+  ],
+  "ci": {
+    "version": "8, 9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jeff-Tian/egg-passport-wechat"
+  },
+  "bugs": {
+    "url": "https://github.com/Jeff-Tian/egg-passport-wechat/issues"
+  },
+  "homepage": "https://github.com/Jeff-Tian/egg-passport-wechat",
+  "author": "jeff.tian@outlook.com",
+  "license": "MIT"
+}
