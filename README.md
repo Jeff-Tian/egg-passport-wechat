@@ -9,12 +9,12 @@
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/egg-passport-wechat.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/egg-passport-wechat
+[npm-image]: https://img.shields.io/npm/v/egg-passport-wechat-ts.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/egg-passport-wechat-ts
 [david-image]: https://img.shields.io/david/jeff-tian/egg-passport-wechat.svg?style=flat-square
 [david-url]: https://david-dm.org/jeff-tian/egg-passport-wechat
-[snyk-image]: https://snyk.io/test/npm/egg-passport-wechat/badge.svg?style=flat-square
-[snyk-url]: https://snyk.io/test/npm/egg-passport-wechat
+[snyk-image]: https://snyk.io/test/npm/egg-passport-wechat-ts/badge.svg?style=flat-square
+[snyk-url]: https://snyk.io/test/npm/egg-passport-wechat-ts
 [download-image]: https://img.shields.io/npm/dm/egg-passport-wechat-ts.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-passport-wechat-ts
 
