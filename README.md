@@ -3,7 +3,7 @@
 > Wechat passport plugin for egg.
 
 [![NPM version][npm-image]][npm-url]
-[![Build Status](https://travis-ci.com/Jeff-Tian/egg-passport-wechat-ts.svg?branch=master)](https://travis-ci.com/Jeff-Tian/egg-passport-wechat-ts)
+[![Build Status](https://travis-ci.com/Jeff-Tian/egg-passport-wechat.svg?branch=master)](https://travis-ci.com/Jeff-Tian/egg-passport-wechat)
 [![codecov](https://codecov.io/gh/Jeff-Tian/egg-passport-wechat/branch/master/graph/badge.svg)](https://codecov.io/gh/Jeff-Tian/egg-passport-wechat)
 [![David deps][david-image]][david-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
@@ -27,8 +27,10 @@ Description here.
 Open [https://uniheart.herokuapp.com/](https://uniheart.herokuapp.com/) on your wechat browser to see the result:
 
 1. Open your wechat
-2. Scan the following QR Code to follow the test public account: ![](./images/public-test-account.jpeg)
-3. And then scan the following QR Code to open the example site: ![](./images/uniheart.png)
+2. Scan the following QR Code to follow the test public account: 
+![](./images/public-test-account.jpeg)
+3. And then scan the following QR Code to open the example site: 
+![](./images/uniheart.png)
 
 ## Install
 
