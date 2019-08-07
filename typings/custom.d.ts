@@ -50,6 +50,14 @@ declare module "egg" {
     isAuthenticated(): boolean;
   }
 
+  type wechatClientConfig = {
+    key: string;
+    secret: string;
+    callbackURL?: string;
+    proxy?: boolean;
+    passReqToCallback: boolean;
+  };
+
   // tslint:disable-next-line:interface-name
   interface EggAppConfig {
     passportLocal?: {
@@ -57,12 +65,6 @@ declare module "egg" {
       passportField: string;
     };
 
-    passportWechat?: {
-      key: string;
-      secret: string;
-      callbackURL?: string;
-      proxy?: boolean;
-      passReqToCallback: boolean;
-    };
+    passportWechat?: wechatClientConfig | any;
   }
 }
