@@ -4,7 +4,7 @@ node_js:
   - "8"
   - "9"
 install:
-  - npm cache clean
+  - npm cache verify
   - npm i npminstall && npminstall
 script:
   - npm run ci
