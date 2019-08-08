@@ -1,7 +1,7 @@
 {
   "name": "egg-passport-wechat-ts",
   "version": "0.0.0-development",
-  "description": "Wechat passport plugin for egg",
+  "description": "Wechat passport plugin for egg, support multiple clients",
   "eggPlugin": {
     "name": "passportWechat",
     "dependencies": [
