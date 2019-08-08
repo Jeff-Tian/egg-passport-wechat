@@ -27,10 +27,10 @@ Description here.
 Open [https://uniheart.herokuapp.com/](https://uniheart.herokuapp.com/) on your wechat browser to see the result:
 
 1. Open your wechat
-2. Scan the following QR Code to follow the test public account: 
-![](./images/public-test-account.jpeg)
-3. And then scan the following QR Code to open the example site: 
-![](./images/uniheart.png)
+2. Scan the following QR Code to follow the test public account:
+   ![](./images/public-test-account.jpeg)
+3. And then scan the following QR Code to open the example site:
+   ![](./images/uniheart.png)
 
 ## Install
 
@@ -50,6 +50,8 @@ exports.passportWechat = {
 
 ## Configuration
 
+Single instance example:
+
 ```js
 // {app_root}/config/config.default.[t|j]s
 exports.passportWechat = {
@@ -58,11 +60,33 @@ exports.passportWechat = {
 };
 ```
 
+Multiple instances example:
+
+```js
+// {app_root}/config/config.default.[t|j]s
+exports.passportWechat = {
+  clients: {
+    wechat1: {
+      key: "your oauth key",
+      secret: "your oauth secret"
+    },
+    wechat2: {
+      key: "your oauth key",
+      secret: "your oauth secret"
+    }
+  }
+};
+```
+
 see [config/config.default.ts](config/config.default.ts) for more detail.
 
 ## Example
 
-<!-- example here -->
+- https://uniheart.herokuapp.com/passport/wechat
+
+```typescript
+app.passport.mount("wechat", app.config.passportWechat);
+```
 
 ## Questions & Suggestions
 
