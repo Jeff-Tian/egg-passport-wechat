@@ -5,7 +5,7 @@ node_js:
   - "9"
 install:
   - npm cache verify
-  - npm i
+  - npm i cnpm && cnpm install
 script:
   - npm run ci
 after_script:
