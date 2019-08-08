@@ -5,11 +5,11 @@ node_js:
   - "9"
 install:
   - npm cache verify
-  - travis_wait npm i npminstall && travis_wait npminstall
+  - npm i
 script:
   - npm run ci
 after_script:
-  - npminstall codecov && codecov
+  - npm i codecov && codecov
 
 jobs:
   include:
