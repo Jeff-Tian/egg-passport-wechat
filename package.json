@@ -36,7 +36,7 @@
     "tsc": "^1.20150623.0",
     "tslib": "^1.9.3",
     "tslint": "^5.11.0",
-    "typescript": "latest",
+    "typescript": "3.0",
     "webstorm-disable-index": "^1.2.0"
   },
   "egg": {
