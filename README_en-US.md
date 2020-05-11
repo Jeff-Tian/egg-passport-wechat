@@ -1,6 +1,6 @@
 # egg-passport-wechat
 
-> 为 egg 项目打造的微信 passport 插件（支持手机端微信登录）。
+> Wechat passport plugin for egg.
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status](https://travis-ci.com/Jeff-Tian/egg-passport-wechat.svg?branch=master)](https://travis-ci.com/Jeff-Tian/egg-passport-wechat)
@@ -8,8 +8,6 @@
 [![David deps][david-image]][david-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
-
-[中文](./README.md)
 
 [npm-image]: https://img.shields.io/npm/v/egg-passport-wechat-ts.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-passport-wechat-ts
@@ -24,23 +22,24 @@
 Description here.
 -->
 
-## 示例
+## Example
 
-从手机微信端打开 [https://uniheart.pa-ca.me/passport/wechat](https://uniheart.pa-ca.me/passport/wechat) 即可查看微信登录示例：
+Open [https://uniheart.pa-ca.me/passport/wechat](https://uniheart.pa-ca.me/passport/wechat) on your wechat browser to
+ see the result:
 
-1. 用手机打开微信扫一扫
-2. 扫描并关注以下测试公众账号：
+1. Open your wechat
+2. Scan the following QR Code to follow the test public account:
    ![](./images/public-test-account.jpeg)
-3. 然后扫描以下二维码以打开本[示例站点](https://uniheart.pa-ca.me)：
+3. And then scan the following QR Code to open the example site:
    ![](./images/uniheart.png)
 
-## 安装
+## Install
 
 ```bash
 $ npm i egg-passport-wechat-ts --save
 ```
 
-## 使用
+## Usage
 
 ```js
 // {app_root}/config/plugin.[t|j]s
@@ -50,20 +49,20 @@ exports.passportWechat = {
 };
 ```
 
-## 配置
+## Configuration
 
-单个实例的配置：
+Single instance example:
 
 ```js
 // {app_root}/config/config.default.[t|j]s
 exports.passportWechat = {
   key: "your oauth key",
   secret: "your oauth secret",
-  callbackURL: "https://your.domain.com/your/path/callback" // 注意，目前需要配置完整的 URL
+  callbackURL: "https://your.domain.com/your/path/callback" // Notice, absolute url is required
 };
 ```
 
-多实例的配置示例：
+Multiple instances example:
 
 ```js
 // {app_root}/config/config.default.[t|j]s
@@ -72,38 +71,36 @@ exports.passportWechat = {
     wechat1: {
       key: "your oauth key",
       secret: "your oauth secret",
-      callbackURL: "https://your.domain.com/your/path/callback" // 注意，目前需要配置完整的 URL
+      callbackURL: "https://your.domain.com/your/path/callback" // Notice, absolute url is required
     },
     wechat2: {
       key: "your oauth key",
       secret: "your oauth secret",
-      callbackURL: "https://your.domain.com/your/path/callback" // 注意，目前需要配置完整的 URL
+      callbackURL: "https://your.domain.com/your/path/callback" // Notice, absolute url is required
     }
   }
 };
 ```
 
-参考 [config/config.default.ts](config/config.default.ts) 查看更多详情。
+see [config/config.default.ts](config/config.default.ts) for more detail.
 
-## 在线示例
+## Example
 
 - https://uniheart.pa-ca.me/passport/wechat
-
-## 在项目中使用
 
 ```typescript
 app.passport.mount("wechat", app.config.passportWechat);
 ```
 
-## 问题和建议
+## Questions & Suggestions
 
-在 [这里](https://github.com/Jeff-Tian/egg-passport-wechat/issues) 提问。
+Please open an issue [here](https://github.com/Jeff-Tian/egg-passport-wechat/issues).
 
-## 许可
+## License
 
 [MIT](LICENSE)
 
-## 测试
+## Test
 
 ```shell
 npm run test-local
